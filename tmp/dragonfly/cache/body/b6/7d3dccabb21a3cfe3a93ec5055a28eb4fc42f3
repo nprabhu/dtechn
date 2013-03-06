@@ -1,0 +1,4 @@
+/* line 1, ../../../../../../../../.rvm/gems/ruby-1.9.3-p385/bundler/gems/refinerycms-portfolio-5c528cfe2ebf/app/assets/stylesheets/refinery/portfolio/admin/galleries.css.scss */
+#records .actions {
+  width: 150px;
+}
