@@ -1,0 +1,557 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+
+/*
+  These only apply to the homepage of your site.
+*/
+/* line 1, ../../app/assets/stylesheets/layout.css.scss */
+body {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* line 7, ../../app/assets/stylesheets/layout.css.scss */
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* line 11, ../../app/assets/stylesheets/layout.css.scss */
+a {
+  color: #3420D3;
+}
+
+/* line 15, ../../app/assets/stylesheets/layout.css.scss */
+#body_content_title {
+  display: none;
+}
+
+/* line 19, ../../app/assets/stylesheets/layout.css.scss */
+header {
+  background-color: #000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#555555), to(#222222));
+  background: -moz-linear-gradient(top, #555555, #222222);
+  color: #FFF;
+  font-weight: bold;
+  position: relative;
+  padding: 15px 100px;
+}
+/* line 27, ../../app/assets/stylesheets/layout.css.scss */
+header #logo {
+  margin: 0;
+  font-size: 24px;
+}
+/* line 31, ../../app/assets/stylesheets/layout.css.scss */
+header a {
+  color: #FFF;
+  text-decoration: none;
+}
+/* line 35, ../../app/assets/stylesheets/layout.css.scss */
+header ul {
+  position: absolute;
+  right: 100px;
+  top: 18px;
+  list-style: none;
+  margin: 0;
+}
+/* line 41, ../../app/assets/stylesheets/layout.css.scss */
+header ul li {
+  float: left;
+  padding: 2px 10px;
+  border-right: solid 2px #6f6f6f;
+}
+/* line 45, ../../app/assets/stylesheets/layout.css.scss */
+header ul li.last {
+  border-right: none;
+}
+
+/* line 52, ../../app/assets/stylesheets/layout.css.scss */
+#page_container, #site_bar_content, header {
+  margin: 0px auto 10px auto;
+  text-align: left;
+}
+
+/* line 57, ../../app/assets/stylesheets/layout.css.scss */
+#page_container {
+  width: 960px;
+  padding: 30px 15px;
+}
+
+/* line 63, ../../app/assets/stylesheets/layout.css.scss */
+#banner {
+  background-color: #852A2C;
+  padding: 20px 100px;
+  font-weight: normal;
+  font-style: italic;
+  color: #FFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a03133), to(#722324));
+  background: -moz-linear-gradient(top, #a03133, #722324);
+  -moz-box-shadow: 0 2px 8px 2px black;
+  -webkit-box-shadow: 0 2px 6px 2px black;
+  margin-bottom: 30px;
+}
+/* line 74, ../../app/assets/stylesheets/layout.css.scss */
+#banner p {
+  margin: 0;
+  padding-top: 32px;
+  font-size: 34px;
+}
+/* line 78, ../../app/assets/stylesheets/layout.css.scss */
+#banner p.font-size-small {
+  padding-top: 10px;
+  font-size: 20px;
+  color: #EAA29F;
+}
+
+/* line 86, ../../app/assets/stylesheets/layout.css.scss */
+#body_content {
+  position: relative;
+}
+/* line 88, ../../app/assets/stylesheets/layout.css.scss */
+#body_content #body {
+  margin: 25px 100px;
+}
+/* line 91, ../../app/assets/stylesheets/layout.css.scss */
+#body_content .image-align-left {
+  margin-right: 40px;
+}
+/* line 94, ../../app/assets/stylesheets/layout.css.scss */
+#body_content #side_body {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  width: 250px;
+}
+/* line 99, ../../app/assets/stylesheets/layout.css.scss */
+#body_content #side_body p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* line 106, ../../app/assets/stylesheets/layout.css.scss */
+footer {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  clear: both;
+}
+/* line 1, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  width: 100%;
+}
+/* line 6, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images li {
+  position: relative;
+  list-style: none;
+  float: left;
+  margin: 10px 20px 20px 0;
+}
+/* line 11, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images li * {
+  cursor: move;
+}
+/* line 14, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images li.odd {
+  margin-right: 18px;
+}
+/* line 17, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images li .image_actions {
+  background: white;
+  position: absolute;
+  padding: 3px;
+  left: 0;
+  top: 0;
+  width: 135px;
+}
+/* line 24, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images li .image_actions * {
+  cursor: pointer;
+}
+/* line 27, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images li .image_actions.no_captions {
+  background: transparent;
+}
+/* line 32, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images > li .image_actions img.caption {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+/* line 40, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#content ul.ui-sortable li {
+  border: 0;
+  background: none !important;
+}
+/* line 44, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#content #page_images.ui-sortable li.placeholder {
+  width: 135px;
+  height: 135px;
+}
+
+/* line 50, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+a#add_image_link {
+  margin-top: 0;
+  line-height: 29px;
+  padding-left: 20px;
+  display: inline;
+  border-bottom: 0;
+  background: url(/assets/refinery/icons/add.png) no-repeat 0px 6px;
+}
+/* line 6, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar_content {
+  height: 47px;
+  position: relative;
+  margin: 0px auto 10px auto;
+  text-align: left;
+  width: 990px;
+}
+
+/* line 13, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar {
+  background: #22a7f2;
+  border-bottom: 0px none;
+}
+
+/* line 17, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+a#site_bar_refinery_cms_logo {
+  left: 448px;
+}
+
+/* line 20, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar, #site_bar * {
+  color: white;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* line 26, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#editor_switch, #site_bar_branding, a#site_bar_refinery_cms_logo {
+  position: absolute;
+}
+
+/* line 27, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#editor_switch {
+  left: 0px;
+}
+/* line 29, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#editor_switch a, #editor_switch a:hover {
+  color: white;
+  background: #e7682c url(/assets/refinery/orange_button.png) repeat-x;
+  border-bottom: 0px none;
+  padding: 4px 14px;
+  border: 1px solid #fca87f;
+  height: 24px;
+  line-height: 24px;
+  cursor: pointer;
+}
+/* line 39, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#editor_switch span {
+  border: 1px solid #0280c7;
+  height: 26px;
+  line-height: 26px;
+  margin-top: 9px;
+  display: block;
+  cursor: pointer;
+}
+/* line 47, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#editor_switch a, #editor_switch span {
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+
+/* line 51, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar {
+  height: 47px;
+  background: #22a7f2;
+  padding: 0px;
+}
+/* line 55, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar * {
+  line-height: 47px;
+}
+/* line 58, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar a {
+  text-decoration: none;
+}
+/* line 61, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar #site_bar_branding {
+  right: 0px;
+}
+/* line 63, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar #site_bar_branding a {
+  font-weight: normal;
+}
+/* line 65, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar #site_bar_branding a#logout {
+  margin-left: 12px;
+}
+/* line 70, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar #site_bar_company_name {
+  font-weight: bold;
+}
+
+/* line 74, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+a#site_bar_refinery_cms_logo {
+  left: 44.5%;
+  border-bottom: none;
+  line-height: 29px;
+  height: 29px;
+  margin-top: 9px;
+  overflow: hidden;
+}
+/* line 81, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+a#site_bar_refinery_cms_logo:hover {
+  border-bottom: none;
+  opacity: 1;
+}
+/* line 84, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+a#site_bar_refinery_cms_logo:hover img {
+  margin-top: -29px;
+}
+
+/* line 89, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+.ie7 #site_bar #editor_switch a {
+  height: 26px;
+  line-height: 26px;
+}
+/* line 3, ../../../app/assets/stylesheets/refinery/submenu.css.scss */
+ul.collapsible_menu li {
+  position: relative;
+}
+/* line 5, ../../../app/assets/stylesheets/refinery/submenu.css.scss */
+ul.collapsible_menu li span.arrow {
+  background-repeat: no-repeat;
+  background-image: url(/assets/refinery/icons/up.gif);
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  width: 11px;
+  height: 7px;
+  cursor: pointer;
+}
+/* line 15, ../../../app/assets/stylesheets/refinery/submenu.css.scss */
+ul.collapsible_menu li.closed span.arrow {
+  background-image: url(/assets/refinery/icons/down.gif);
+}
+/* line 19, ../../../app/assets/stylesheets/refinery/submenu.css.scss */
+ul.collapsible_menu > div {
+  width: 93%;
+  margin: 0px auto;
+}
+/* Tooltips CSS definitions */
+/* line 3, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip {
+  position: absolute!important;
+  overflow: hidden;
+  font-size: 13px;
+  font-family: inherit;
+  z-index: 10000!important;
+  text-align: center;
+}
+/* line 10, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xtop, .tooltip .tooltip .xbottom {
+  display: block;
+  background: transparent;
+  font-size: 1px;
+}
+/* line 11, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb1, .tooltip .tooltip .xb2, .tooltip .tooltip .xb3, .tooltip .tooltip .xb4 {
+  display: block;
+  overflow: hidden;
+}
+/* line 12, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb1, .tooltip .tooltip .xb2, .tooltip .tooltip .xb3 {
+  height: 1px;
+}
+/* line 13, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb2, .tooltip .tooltip .xb3, .tooltip .tooltip .xb4 {
+  background: #606060;
+  border-left: 1px solid #606060;
+  border-right: 1px solid #606060;
+}
+/* line 14, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xbottom .xb2, .tooltip .tooltip .xbottom .xb3, .tooltip .tooltip .xbottom .xb4 {
+  background: #606060;
+}
+/* line 15, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb1 {
+  margin: 0 5px;
+  background: #606060;
+}
+/* line 16, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb2 {
+  margin: 0 3px;
+  border-width: 0 2px;
+}
+/* line 17, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb3 {
+  margin: 0 2px;
+}
+/* line 18, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb4 {
+  height: 2px;
+  margin: 0 1px;
+}
+/* line 19, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xboxcontent {
+  margin: 0;
+  color: #000;
+  word-wrap: break-word;
+  border-width: 4px 4px;
+  border-style: solid;
+  border-color: #606060;
+  background-color: white;
+  padding: 6px;
+}
+/* line 29, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb1, .tooltip .xb2, .tooltip .xb3, .tooltip .xb4 {
+  border-color: #606060;
+}
+
+/* line 33, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip-square .xtop, .tooltip-square .xbottom {
+  display: none;
+}
+/* line 1, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-widget-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: auto !important;
+  opacity: .75;
+  filter: Alpha(Opacity=75);
+  background: #000;
+}
+
+/* line 12, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  border: 4px solid #22a7f2;
+  width: auto;
+}
+/* line 18, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog #dialog_loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 208px;
+  height: 13px;
+  margin: -6px 0 0 -104px;
+}
+/* line 26, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog .ui-dialog-titlebar {
+  position: relative;
+  width: 100%;
+  height: 33px;
+  background-color: #22A7F2;
+}
+/* line 32, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog .ui-dialog-title {
+  float: left;
+  height: 33px;
+  line-height: 33px;
+  font-size: 16px;
+  padding-left: 10px;
+  color: white;
+}
+/* line 40, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog .ui-dialog-titlebar-close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 19px;
+  border: none;
+}
+/* line 46, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog .ui-dialog-titlebar-close span {
+  display: block;
+  margin: 1px;
+  background: transparent url(/assets/refinery/cross.png) top left no-repeat;
+  text-indent: -10000px;
+}
+/* line 53, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+  padding: 0;
+}
+/* line 56, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog iframe {
+  clear: both;
+  border: 0px none;
+  margin-bottom: -1px;
+  margin-top: 1px;
+  width: 100% !important;
+}
+
+/** Hide the tab without using display:none; This is required to hide flash embeds etc.**/
+/* line 65, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-tabs-hide {
+  display: block !important;
+  height: 0 !important;
+  width: 0 !important;
+  border: 0px none !important;
+  visibility: hidden !important;
+  position: absolute;
+  left: -10000px;
+  top: -10000px;
+}
+/* line 75, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-tabs-hide object,
+.ui-tabs-hide embed {
+  height: 0px !important;
+  width: 0px !important;
+}
+
+/* line 80, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ie7 .ui-tabs-hide {
+  display: none !important !important;
+  height: auto !important !important;
+  width: auto !important !important;
+  position: static;
+}
+
+/* line 86, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-tabs li.ui-state-default {
+  float: left;
+  list-style: none;
+  margin-right: 2px;
+}
+
+/* line 91, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-tabs .ui-state-default a {
+  background-color: #bcbcbc;
+  color: white;
+  padding: 8px 13px;
+  border-bottom: none;
+  display: block;
+  margin-top: 6px;
+}
+
+/* line 99, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-tabs .ui-state-active a {
+  background-color: #808080;
+  padding: 11px 13px;
+  margin-top: 0px;
+}

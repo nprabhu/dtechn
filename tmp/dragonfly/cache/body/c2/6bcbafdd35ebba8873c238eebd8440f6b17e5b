@@ -1,0 +1,921 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+
+/* line 1, ../../app/assets/stylesheets/application.css.scss */
+body {
+  margin: 0px;
+}
+
+/* line 4, ../../app/assets/stylesheets/application.css.scss */
+#page, #site_bar_content, footer, header {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+/* line 8, ../../app/assets/stylesheets/application.css.scss */
+#body_content_left {
+  float: left;
+  width: 600px;
+}
+/* line 11, ../../app/assets/stylesheets/application.css.scss */
+#body_content_left .inner {
+  padding-right: 10px;
+}
+
+/* line 15, ../../app/assets/stylesheets/application.css.scss */
+#body_content_right {
+  float: right;
+  width: 400px;
+}
+/* line 18, ../../app/assets/stylesheets/application.css.scss */
+#body_content_right .inner {
+  padding-left: 10px;
+}
+
+/* line 23, ../../app/assets/stylesheets/application.css.scss */
+#body_content.no_body_content_left #body_content_right,
+#body_content.no_body_content_right #body_content_left {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* line 29, ../../app/assets/stylesheets/application.css.scss */
+.menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+/* line 33, ../../app/assets/stylesheets/application.css.scss */
+.menu li {
+  padding: 0px;
+  margin: 0px 9px 0px 0px;
+  list-style: none;
+  float: left;
+}
+/* line 38, ../../app/assets/stylesheets/application.css.scss */
+.menu li.last {
+  margin-right: 0px;
+}
+/* line 42, ../../app/assets/stylesheets/application.css.scss */
+.menu li.selected > a {
+  font-weight: bold;
+}
+
+/* line 48, ../../app/assets/stylesheets/application.css.scss */
+.page_not_live {
+  border: 1px solid #a00027;
+  color: #A00027;
+  background: #FFB1B1;
+  padding: 3px 9px;
+  font-weight: bold;
+  width: auto;
+}
+/*
+  These only apply to the homepage of your site.
+*/
+/*==================================
+=     Mixins
+==================================*/
+/* line 24, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+* {
+  color: #41403C;
+  font-family: Arial;
+  font-size: 13px;
+}
+
+/* line 29, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* line 33, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+html {
+  min-height: 100%;
+}
+
+/* line 36, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: Verdana;
+  line-height: 1.5em;
+  background: #303030 url(/assets/refinery/page_bg.png) repeat;
+}
+
+/* line 45, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+acronym {
+  cursor: help;
+}
+
+/* line 48, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+label[for] {
+  cursor: pointer;
+}
+
+/* line 52, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#page_container, #site_bar_content, header {
+  margin: 0px auto 10px auto;
+  text-align: left;
+  width: 990px;
+}
+
+/* line 57, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#page_container {
+  width: 960px;
+  padding: 30px 15px;
+}
+
+/* line 61, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#site_bar_content {
+  margin-bottom: 0px;
+}
+
+/* line 64, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#content .field, #content .form-actions {
+  width: 100%;
+  position: relative;
+}
+
+/* line 68, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#dialog_container #content .field, .dialog_container .field {
+  width: auto;
+  margin: 5px 0;
+}
+
+/* line 72, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+input.widest, textarea.widest {
+  width: 99%;
+}
+
+/* line 75, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+select.widest {
+  max-width: 99%;
+}
+
+/* line 78, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#records {
+  float: left;
+  width: 67.7%;
+}
+
+/* line 82, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#actions {
+  float: right;
+  width: 30.7%;
+  padding-left: 15px;
+  padding-top: 0px;
+}
+/* line 87, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#actions ul {
+  margin: 0px 0px 18px 0px;
+  padding: 0;
+  list-style: none;
+}
+/* line 91, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#actions ul#current_locale {
+  margin-top: 30px;
+}
+/* line 95, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#actions li {
+  margin-top: 10px;
+}
+/* line 97, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#actions li a {
+  background-color: #dbedff;
+  background-position: 12px;
+  background-repeat: no-repeat;
+  border: 1px solid #65c3f7;
+  display: block;
+  padding: 9px 12px 9px 36px;
+}
+/* line 104, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#actions li a:hover {
+  background-color: #cae7fb;
+}
+/* line 107, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#actions li a:active {
+  background-color: #22A7F2;
+  color: white;
+}
+/* line 111, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#actions li a img {
+  vertical-align: bottom;
+  border: 0;
+}
+/* line 116, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#actions li.selected a {
+  background-color: #22A7F2;
+  color: white;
+}
+
+/* line 122, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#sort-status {
+  padding: 5px 5px 5px 0px;
+}
+
+/* line 125, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+hr {
+  border: 0;
+  border-top: 1px solid #484743;
+}
+
+/* line 130, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.actions img {
+  border: none;
+}
+/* line 133, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.actions a, .actions a:hover {
+  border: none;
+  text-decoration: none;
+}
+
+/* line 138, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.errorExplanation {
+  background: 7px 10px no-repeat url(/assets/refinery/icons/cancel.png) #ffb1b1;
+  padding: 0px 5px 5px 30px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid red;
+}
+/* line 145, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.errorExplanation h2 {
+  color: red;
+  text-transform: none;
+  display: none;
+}
+/* line 150, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.errorExplanation p {
+  font-weight: normal;
+}
+
+/* line 154, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.fieldWithErrors input, .fieldWithErrors textarea {
+  border: 1px solid red !important;
+  background-color: #ffecf0 !important;
+}
+
+/* line 158, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.fieldWithErrors iframe, .fieldWithErrors .wym_box {
+  border-color: red !important;
+}
+
+/* line 161, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#message, .flash {
+  padding: 8px 8px 8px 30px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* line 166, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.flash_notice, .flash_message {
+  border: 1px solid #00a017;
+  color: #00A017;
+  background: 7px 7px no-repeat url(/assets/refinery/icons/accept.png) #e0f5e0;
+}
+
+/* line 171, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.flash_notice, .flash_notice * {
+  color: #00A017;
+}
+
+/* line 174, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.flash_error, .flash_alert {
+  border: 1px solid #a00027;
+  color: #A00027;
+  background: 7px 7px no-repeat url(/assets/refinery/icons/cancel.png) #ffb1b1;
+}
+
+/* line 179, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.flash.flash_notice #flash_close, .flash.flash_error #flash_close, .flash.flash_alert #flash_close {
+  text-transform: lowercase;
+}
+
+/* line 182, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.flash.flash_message {
+  background: #E0F5E0;
+  padding: 9px;
+  position: relative;
+  margin-bottom: 32px;
+}
+/* line 187, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.flash.flash_message h2 {
+  margin-top: 12px;
+}
+
+/* line 191, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.flash.flash_message.flash_message, .flash_message * {
+  color: #262719;
+  font-size: 14px;
+}
+
+/* line 195, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.flash a, .flash a:hover {
+  color: #e20003;
+  border-bottom-color: #e20003;
+}
+
+/* line 200, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.flash.flash_error a, .flash.flash_error a:hover,
+.flash.flash_alert a, .flash.flash_alert a:hover {
+  display: none;
+}
+
+/* line 204, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+noscript .flash.flash_error a, noscript .flash.flash_error a:hover,
+noscript .flash.flash_alert a, noscript .flash.flash_alert a:hover {
+  display: inline;
+  font-weight: bold;
+}
+
+/* line 208, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.flash a#flash_close {
+  position: absolute;
+  right: 9px;
+  top: 7px;
+}
+
+/* line 213, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.flash.flash_message a#flash_close {
+  top: 21px;
+}
+
+/* line 216, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+a {
+  color: #41403C;
+  text-decoration: none;
+}
+
+/* line 220, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+a:hover {
+  color: #000;
+  border-bottom: 1px solid #727272;
+}
+
+/* line 224, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#content .wym_box a, #content .ui-tabs a {
+  border-bottom: 0px none;
+}
+
+/* line 227, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.index #content, .splash #content {
+  background-color: white;
+  background-repeat: repeat-y;
+}
+
+/* line 231, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#content {
+  padding: 0px;
+}
+/* line 233, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#content a {
+  border-bottom: 1px dotted #727272;
+}
+/* line 235, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#content a.locale {
+  border-bottom: 0;
+}
+/* line 239, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#content h1 {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+  border-bottom: 1px solid #99998b;
+  padding-bottom: 10px;
+}
+/* line 246, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#content h2 {
+  font-size: 18px;
+  color: #41403c;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+/* line 253, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#content form.edit_image {
+  width: 70%;
+  float: left;
+}
+/* line 257, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#content #existing_image {
+  float: right;
+  width: 25%;
+}
+/* line 262, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#content .actions a {
+  display: block;
+  float: right;
+  margin: 3px 3px;
+  line-height: inherit;
+  border-bottom: 0px none;
+}
+
+/* line 271, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+.less-important {
+  color: #727272;
+}
+
+/* line 274, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+a#site_bar_refinery_cms_logo {
+  left: 448px;
+}
+
+/* line 277, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#content, #page_container {
+  background-color: white;
+}
+
+/* line 281, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+header {
+  background-color: #000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#555555), to(#222222));
+  background: -moz-linear-gradient(top, #555555, #222222);
+  color: #FFF;
+  font-weight: bold;
+  position: relative;
+  padding: 15px 100px;
+}
+/* line 289, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+header #logo {
+  margin: 0;
+  font-size: 24px;
+}
+/* line 293, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+header a {
+  color: #FFF;
+  text-decoration: none;
+}
+/* line 297, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+header ul {
+  position: absolute;
+  right: 100px;
+  top: 18px;
+  list-style: none;
+  margin: 0;
+}
+/* line 303, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+header ul li {
+  float: left;
+  padding: 2px 10px;
+  border-right: solid 2px #6f6f6f;
+}
+/* line 307, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+header ul li.last {
+  border-right: none;
+}
+
+/* line 315, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#body_content {
+  position: relative;
+}
+/* line 317, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#body_content #body {
+  margin: 25px 100px;
+}
+/* line 320, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#body_content .image-align-left {
+  margin-right: 40px;
+}
+/* line 323, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#body_content #side_body {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  width: 250px;
+}
+/* line 328, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+#body_content #side_body p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* line 335, ../../../app/assets/stylesheets/refinery/layout.css.scss */
+footer {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  clear: both;
+}
+/* line 1, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  width: 100%;
+}
+/* line 6, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images li {
+  position: relative;
+  list-style: none;
+  float: left;
+  margin: 10px 20px 20px 0;
+}
+/* line 11, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images li * {
+  cursor: move;
+}
+/* line 14, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images li.odd {
+  margin-right: 18px;
+}
+/* line 17, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images li .image_actions {
+  background: white;
+  position: absolute;
+  padding: 3px;
+  left: 0;
+  top: 0;
+  width: 135px;
+}
+/* line 24, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images li .image_actions * {
+  cursor: pointer;
+}
+/* line 27, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images li .image_actions.no_captions {
+  background: transparent;
+}
+/* line 32, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#page_images > li .image_actions img.caption {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+/* line 40, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#content ul.ui-sortable li {
+  border: 0;
+  background: none !important;
+}
+/* line 44, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+#content #page_images.ui-sortable li.placeholder {
+  width: 135px;
+  height: 135px;
+}
+
+/* line 50, ../../../app/assets/stylesheets/refinery/page-image-picker.css.scss */
+a#add_image_link {
+  margin-top: 0;
+  line-height: 29px;
+  padding-left: 20px;
+  display: inline;
+  border-bottom: 0;
+  background: url(/assets/refinery/icons/add.png) no-repeat 0px 6px;
+}
+/* line 6, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar_content {
+  height: 47px;
+  position: relative;
+  margin: 0px auto 10px auto;
+  text-align: left;
+  width: 990px;
+}
+
+/* line 13, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar {
+  background: #22a7f2;
+  border-bottom: 0px none;
+}
+
+/* line 17, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+a#site_bar_refinery_cms_logo {
+  left: 448px;
+}
+
+/* line 20, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar, #site_bar * {
+  color: white;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* line 26, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#editor_switch, #site_bar_branding, a#site_bar_refinery_cms_logo {
+  position: absolute;
+}
+
+/* line 27, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#editor_switch {
+  left: 0px;
+}
+/* line 29, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#editor_switch a, #editor_switch a:hover {
+  color: white;
+  background: #e7682c url(/assets/refinery/orange_button.png) repeat-x;
+  border-bottom: 0px none;
+  padding: 4px 14px;
+  border: 1px solid #fca87f;
+  height: 24px;
+  line-height: 24px;
+  cursor: pointer;
+}
+/* line 39, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#editor_switch span {
+  border: 1px solid #0280c7;
+  height: 26px;
+  line-height: 26px;
+  margin-top: 9px;
+  display: block;
+  cursor: pointer;
+}
+/* line 47, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#editor_switch a, #editor_switch span {
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+
+/* line 51, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar {
+  height: 47px;
+  background: #22a7f2;
+  padding: 0px;
+}
+/* line 55, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar * {
+  line-height: 47px;
+}
+/* line 58, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar a {
+  text-decoration: none;
+}
+/* line 61, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar #site_bar_branding {
+  right: 0px;
+}
+/* line 63, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar #site_bar_branding a {
+  font-weight: normal;
+}
+/* line 65, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar #site_bar_branding a#logout {
+  margin-left: 12px;
+}
+/* line 70, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+#site_bar #site_bar_company_name {
+  font-weight: bold;
+}
+
+/* line 74, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+a#site_bar_refinery_cms_logo {
+  left: 44.5%;
+  border-bottom: none;
+  line-height: 29px;
+  height: 29px;
+  margin-top: 9px;
+  overflow: hidden;
+}
+/* line 81, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+a#site_bar_refinery_cms_logo:hover {
+  border-bottom: none;
+  opacity: 1;
+}
+/* line 84, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+a#site_bar_refinery_cms_logo:hover img {
+  margin-top: -29px;
+}
+
+/* line 89, ../../../app/assets/stylesheets/refinery/site_bar.css.scss */
+.ie7 #site_bar #editor_switch a {
+  height: 26px;
+  line-height: 26px;
+}
+/* line 3, ../../../app/assets/stylesheets/refinery/submenu.css.scss */
+ul.collapsible_menu li {
+  position: relative;
+}
+/* line 5, ../../../app/assets/stylesheets/refinery/submenu.css.scss */
+ul.collapsible_menu li span.arrow {
+  background-repeat: no-repeat;
+  background-image: url(/assets/refinery/icons/up.gif);
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  width: 11px;
+  height: 7px;
+  cursor: pointer;
+}
+/* line 15, ../../../app/assets/stylesheets/refinery/submenu.css.scss */
+ul.collapsible_menu li.closed span.arrow {
+  background-image: url(/assets/refinery/icons/down.gif);
+}
+/* line 19, ../../../app/assets/stylesheets/refinery/submenu.css.scss */
+ul.collapsible_menu > div {
+  width: 93%;
+  margin: 0px auto;
+}
+/* Tooltips CSS definitions */
+/* line 3, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip {
+  position: absolute!important;
+  overflow: hidden;
+  font-size: 13px;
+  font-family: inherit;
+  z-index: 10000!important;
+  text-align: center;
+}
+/* line 10, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xtop, .tooltip .tooltip .xbottom {
+  display: block;
+  background: transparent;
+  font-size: 1px;
+}
+/* line 11, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb1, .tooltip .tooltip .xb2, .tooltip .tooltip .xb3, .tooltip .tooltip .xb4 {
+  display: block;
+  overflow: hidden;
+}
+/* line 12, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb1, .tooltip .tooltip .xb2, .tooltip .tooltip .xb3 {
+  height: 1px;
+}
+/* line 13, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb2, .tooltip .tooltip .xb3, .tooltip .tooltip .xb4 {
+  background: #606060;
+  border-left: 1px solid #606060;
+  border-right: 1px solid #606060;
+}
+/* line 14, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xbottom .xb2, .tooltip .tooltip .xbottom .xb3, .tooltip .tooltip .xbottom .xb4 {
+  background: #606060;
+}
+/* line 15, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb1 {
+  margin: 0 5px;
+  background: #606060;
+}
+/* line 16, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb2 {
+  margin: 0 3px;
+  border-width: 0 2px;
+}
+/* line 17, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb3 {
+  margin: 0 2px;
+}
+/* line 18, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb4 {
+  height: 2px;
+  margin: 0 1px;
+}
+/* line 19, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xboxcontent {
+  margin: 0;
+  color: #000;
+  word-wrap: break-word;
+  border-width: 4px 4px;
+  border-style: solid;
+  border-color: #606060;
+  background-color: white;
+  padding: 6px;
+}
+/* line 29, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip .xb1, .tooltip .xb2, .tooltip .xb3, .tooltip .xb4 {
+  border-color: #606060;
+}
+
+/* line 33, ../../../app/assets/stylesheets/refinery/tooltips.css.scss */
+.tooltip-square .xtop, .tooltip-square .xbottom {
+  display: none;
+}
+/* line 1, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-widget-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: auto !important;
+  opacity: .75;
+  filter: Alpha(Opacity=75);
+  background: #000;
+}
+
+/* line 12, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  border: 4px solid #22a7f2;
+  width: auto;
+}
+/* line 18, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog #dialog_loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 208px;
+  height: 13px;
+  margin: -6px 0 0 -104px;
+}
+/* line 26, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog .ui-dialog-titlebar {
+  position: relative;
+  width: 100%;
+  height: 33px;
+  background-color: #22A7F2;
+}
+/* line 32, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog .ui-dialog-title {
+  float: left;
+  height: 33px;
+  line-height: 33px;
+  font-size: 16px;
+  padding-left: 10px;
+  color: white;
+}
+/* line 40, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog .ui-dialog-titlebar-close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 19px;
+  border: none;
+}
+/* line 46, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog .ui-dialog-titlebar-close span {
+  display: block;
+  margin: 1px;
+  background: transparent url(/assets/refinery/cross.png) top left no-repeat;
+  text-indent: -10000px;
+}
+/* line 53, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+  padding: 0;
+}
+/* line 56, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-dialog iframe {
+  clear: both;
+  border: 0px none;
+  margin-bottom: -1px;
+  margin-top: 1px;
+  width: 100% !important;
+}
+
+/** Hide the tab without using display:none; This is required to hide flash embeds etc.**/
+/* line 65, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-tabs-hide {
+  display: block !important;
+  height: 0 !important;
+  width: 0 !important;
+  border: 0px none !important;
+  visibility: hidden !important;
+  position: absolute;
+  left: -10000px;
+  top: -10000px;
+}
+/* line 75, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-tabs-hide object,
+.ui-tabs-hide embed {
+  height: 0px !important;
+  width: 0px !important;
+}
+
+/* line 80, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ie7 .ui-tabs-hide {
+  display: none !important !important;
+  height: auto !important !important;
+  width: auto !important !important;
+  position: static;
+}
+
+/* line 86, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-tabs li.ui-state-default {
+  float: left;
+  list-style: none;
+  margin-right: 2px;
+}
+
+/* line 91, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-tabs .ui-state-default a {
+  background-color: #bcbcbc;
+  color: white;
+  padding: 8px 13px;
+  border-bottom: none;
+  display: block;
+  margin-top: 6px;
+}
+
+/* line 99, ../../../app/assets/stylesheets/refinery/ui.css.scss */
+.ui-tabs .ui-state-active a {
+  background-color: #808080;
+  padding: 11px 13px;
+  margin-top: 0px;
+}
